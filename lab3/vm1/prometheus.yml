@@ -1,0 +1,20 @@
+global:
+  scrape_interval:     15s
+  evaluation_interval: 15s
+
+# Alertmanager configuration
+alerting:
+  alertmanagers:
+  - static_configs:
+    - targets:
+       - localhost:9093
+
+# Node-exporter configuration
+scrape_configs:
+  - job_name: 'node'
+    static_configs:
+    - targets:
+       - localhost:9100
+       - 192.168.3.76:9100
+rule_files:
+          - "alert-nginx.yml"

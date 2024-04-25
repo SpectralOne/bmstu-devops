@@ -1,0 +1,10 @@
+- hosts: vms
+  become: yes
+  tasks:
+    - name:
+      apt:
+        name:
+          - vifm
+          - sshpass
+          - htop
+        state: present

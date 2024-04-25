@@ -1,0 +1,6 @@
+[servers]
+server1 ansible_host=192.168.3.76
+
+[vms]
+vm1 ansible_connection=local
+vm2 ansible_host=192.168.3.76 ansible_ssh_pass=KiG7k53R0 ansible_become_pass=KiG7k53R0

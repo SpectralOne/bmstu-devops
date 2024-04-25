@@ -1,0 +1,19 @@
+{
+    "name": "devops",
+    "version": "0.0.1",
+    "private": true,
+    "author-name": "Artem Bogachenko",
+    "scripts": {
+        "start": "bun run ./src/app.js",
+        "build": "bun build --target=bun ./src/app.js --outdir ./build",
+        "test": "bun test",
+        "ci_build": "./ci_build.sh"
+    },
+    "dependencies": {
+        "body-parser": "~1.15.2",
+        "express": "^4.18.3"
+    },
+    "devDependencies": {
+        "jest": "^29.7.0"
+    }
+}
